@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PubApi</name>
+    </assembly>
+    <members>
+        <member name="T:PubApi.Controllers.CustController">
+            <summary>
+            廠商基本資料
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.CustController.Get(System.String)">
+            <summary>
+            取得特定廠商資料
+            </summary>
+            <param name="id">廠商統一編號</param>
+            <returns>廠商資料</returns>
+        </member>
+        <member name="T:PubApi.Controllers.DepaController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.DepaController.GetDepa">
+            <summary>
+            取得本局全部單位代碼及單位名稱 (不包含停用單位)
+            </summary>
+            <returns>
+            本局全部單位代碼及單位名稱
+            </returns>
+        </member>
+        <member name="M:PubApi.Controllers.DepaController.GetDepaById(System.String)">
+            <summary>
+            依據「單位代碼」回傳「單位名稱」 (包含已停用單位)
+            </summary>
+            <param name="id">單位代碼</param>
+            <returns>
+            單位資料內容
+             </returns>
+        </member>
+        <member name="M:PubApi.Controllers.DepaController.GetDepaNameById(System.String)">
+            <summary>
+            依據「單位代碼」回傳「單位名稱」 (包含已停用單位)
+            </summary>
+            <param name="id">單位代碼</param>
+            <returns>
+            單位資料內容
+             </returns>
+        </member>
+        <member name="T:PubApi.Controllers.EipController">
+            <summary>
+            EIP應用系統清單
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.EipController.Get">
+            <summary>
+            取得所有 EIP 應用系統清單
+            </summary>
+            <returns>EIP 應用系統清單</returns>
+        </member>
+        <member name="M:PubApi.Controllers.EipController.Get(System.String)">
+            <summary>
+            依據「系統代號」取得 EIP 應用系統清單
+            </summary>
+            <param name="id">系統代號</param>
+            <returns>EIP 應用系統清單</returns>
+        </member>
+        <member name="T:PubApi.Controllers.DortsLineController">
+            <summary>
+            捷運線別清單
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.DortsLineController.Get">
+            <summary>
+            取得所有捷運線別清單
+            </summary>
+            <returns>捷運線別清單</returns>
+        </member>
+        <member name="M:PubApi.Controllers.DortsLineController.Get(System.String)">
+            <summary>
+            依據「線別代碼」取得捷運線別清單
+            </summary>
+            <param name="id">線別代碼</param>
+            <returns>捷運線別資料列</returns>
+        </member>
+        <member name="T:PubApi.Controllers.EmplController">
+            <summary>
+            API網址：https://localhost:44392/API/SPM/Pub/xxxx
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.EmplController.SQLGetAll">
+            SQL Server資料庫
+             <summary>
+             取得員工 (PP V_EMPL_OPEN) 全部資料
+             </summary>
+             <returns>員工清單</returns>
+        </member>
+        <member name="M:PubApi.Controllers.EmplController.GetEmplByDepa(System.String)">
+            <summary>
+            依據「部門代碼」取得員工資料
+            </summary>
+            <param name="depa">部門代碼</param>
+            <returns>部門員工清單</returns>
+        </member>
+        <member name="M:PubApi.Controllers.EmplController.SQLGetDataID(System.String)">
+            <summary>
+            依據「員工編號」取得員工資料
+            </summary>
+            <param name="id">員工編號</param>
+            <returns>員工資料內容</returns>
+        </member>
+        <member name="M:PubApi.Controllers.EmplController.GetEmplPost">
+            <summary>
+            職稱清單
+            </summary>
+            <returns>員工職稱清單</returns>   
+        </member>
+        <member name="M:PubApi.Controllers.EmplController.Get(System.String)">
+            <summary>
+            依據「員工號」查詢該員工當天差勤系統中所代理之同仁
+            </summary>
+            <param name="id">員工號</param>
+            <returns>USER_ID：請假同仁, DEPU_USER_ID：代理同仁</returns>
+        </member>
+        <member name="T:PubApi.Controllers.JobListController">
+            <summary>
+            工作代號清單
+            </summary>
+        </member>
+        <member name="M:PubApi.Controllers.JobListController.Get">
+            <summary>
+            取得所有工作代號清單
+            </summary>
+            <returns>工作代號清單</returns>
+        </member>
+        <member name="M:PubApi.Controllers.JobListController.ProjbyId(System.String)">
+            <summary>
+            依據「工作代號(或工程標號)」取得專案項目內容
+            </summary>
+            <param name="id">工作代號(工程標號)</param>
+            <returns>工作項目內容</returns>
+        </member>
+        <member name="M:PubApi.Controllers.JobListController.ProjbyLine(System.String)">
+            <summary>
+            依據「線別代碼」取得工作項目
+            </summary>
+            <param name="id">線別代碼</param>
+            <returns>工作項目清單</returns>
+        </member>
+    </members>
+</doc>
