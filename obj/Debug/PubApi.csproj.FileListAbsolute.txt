@@ -77,8 +77,6 @@ E:\visual studio 2019\API\PubWebApi\bin\PubApi.pdb
 E:\visual studio 2019\API\PubWebApi\obj\Debug\PubApi.dll
 E:\visual studio 2019\API\PubWebApi\obj\Debug\PubApi.pdb
 E:\visual studio 2019\API\PubWebApi\obj\Debug\PubApi.csproj.AssemblyReference.cache
-E:\visual studio 2019\API\PubWebApi\bin\System.Web.Cors.dll
-E:\visual studio 2019\API\PubWebApi\bin\System.Web.Http.Cors.dll
 E:\visual studio 2019\API\PubWebApi\bin\System.Web.Http.Cors.xml
 E:\visual studio 2019\API\PubWebApi\App_Data\PubApi.dll.config
 E:\visual studio 2019\API\PubWebApi\App_Data\PubApiWithSwagger.xml
